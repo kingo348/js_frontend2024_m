@@ -1,14 +1,13 @@
 import React from 'react';
 import Articles from './components/Articles';
+import './App.css';
 
-class App extends React.Component {	
-  render () {
-    return (
-      <div className="App">
-        <Articles />
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <div className="App">
+      <Articles />
+    </div>
+  );
+};
 
 export default App;

@@ -1,12 +1,8 @@
-/* Articles.css */
 
 .articles-container {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .articles-list {
@@ -15,38 +11,82 @@
   }
   
   .article-item {
-    background-color: #ffffff;
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .article-item:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .article-title {
     margin: 0;
-    font-size: 24px;
-    color: #333;
+    font-size: 1.5em;
   }
   
-  .article-author,
-  .article-date {
+  .article-author, .article-date {
     margin: 5px 0;
-    font-size: 14px;
-    color: #777;
   }
   
   .article-content {
-    font-size: 16px;
-    color: #555;
+    margin: 10px 0;
   }
   
-  .loading {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 50px;
+  button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
   }
+  
+  button i {
+    font-size: 16px;
+  }
+  
+  button:hover i {
+    color: #007bff;
+  }
+  
+  .save-btn i:hover {
+    color: green;
+  }
+  
+  .delete-btn i:hover {
+    color: red;
+  }
+  
+  .like-btn i:hover {
+    color: pink;
+  }
+  
+  .edit-btn i:hover {
+    color: #007bff;
+  }
+  
+  .comments-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+  
+  .comment-item {
+    background-color: #efefef;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 3px;
+  }
+  
+  .new-article-btn, .new-comment-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .new-article-btn:hover, .new-comment-btn:hover {
+    background-color: #0056b3;
+  }
+  
